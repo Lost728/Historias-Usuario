@@ -1,0 +1,168 @@
+/* Estilo base para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+}
+
+/* Estilo para centrar específicamente las celdas con clase "centrar-input" */
+.centrar-input {
+    text-align: center; /* Centrar el contenido dentro de la celda */
+    vertical-align: middle; /* Alinear verticalmente */
+}
+
+/* Centrar el input dentro de las celdas con clase "centrar-input" */
+.centrar-input input[type="text"] {
+    display: inline-block; /* Mantener inline-block para alineación */
+    text-align: center; /* Centrar el texto dentro del input */
+    width: 100%; /* Ancho completo para que se ajuste a la celda */
+    margin: 0; /* Eliminar márgenes adicionales */
+    padding: 5px 0; /* Ajustar el padding */
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #6060f0;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Tabla principal */
+table.tablaHistorias {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    border: 1px solid #000;
+    color: white;
+}
+
+/* Estilo de las celdas */
+td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+    color: #333; /* Texto por defecto */
+}
+
+/* Colores de fondo específicos */
+tbody tr:nth-child(1) td:first-child,
+tbody tr:nth-child(2) td:first-child,
+tbody tr:nth-child(3) td:first-child,
+tbody tr:nth-child(6) td {
+    background-color: #6060f0;
+    color: #fff; /* Texto blanco en estas celdas */
+}
+
+tbody tr:nth-child(4) td {
+    background-color: rgb(115, 115, 194);
+    color: #fff; /* Texto blanco en estas celdas */
+}
+
+/* Alineación centrada en ciertas celdas */
+tbody tr:nth-child(1) td,
+tbody tr:nth-child(2) td,
+tbody tr:nth-child(3) td,
+tbody tr:nth-child(4) td,
+tbody tr:nth-child(5) td,
+tbody tr:nth-child(6) td {
+    text-align: center;
+}
+
+/* Estilo para el span */
+td span {
+    display: inline-block;
+    text-align: left; /* Alinear el span a la izquierda */
+    margin-right: 5px; /* Separación entre el span y el input */
+    font-weight: bold;
+    color: #000000; /* Color del texto del span */
+}
+
+/* Estilo específico para las celdas con span e input */
+td span,
+td input {
+    display: inline-flex; /* Cambiar a flexbox para mejor alineación */
+    align-items: center; /* Alinear verticalmente */
+    vertical-align: middle;
+}
+
+/* Ajustar la alineación y el espaciado */
+td input[type="text"] {
+    width: 95%; /* Ancho del input ajustado */
+    margin-left: 5px; /* Espaciado entre el span y el input */
+    padding: 2px; /* Ajuste de padding */
+    border: none;
+}
+
+/* Ajustar el ancho de los inputs dinámicos */
+td input.dynamic-input {
+    width: 100%; /* Aumentar el ancho de los inputs generados */
+    margin: 5px 0; /* Espaciado entre inputs */
+    padding: 5px 0;
+}
+
+/* Efecto de hover para el input */
+td input[type="text"]:focus {
+    outline: none;
+}
+
+/* Botón */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6060f0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4d4dd0;
+}
+
+/* Listas */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+li {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Ajuste para los inputs generados dinámicamente */
+td input[type="text"].dynamic-input {
+    display: block; /* Asegurar que los inputs generados se muestren */
+    width: 95%; /* Aumentar el ancho del nuevo input generado */
+    margin: 5px 0; /* Espaciado entre inputs generados */
+    padding: 4px 5px; /* Padding ajustado */
+}
